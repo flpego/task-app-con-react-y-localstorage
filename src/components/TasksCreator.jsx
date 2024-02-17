@@ -15,7 +15,6 @@ function TasksCreator({createNewTask}) {
       e.preventDefault();
       createNewTask(newTaskTitle)
       setNewTaskTitle("");
-      // localStorage.setItem("tasks", newTaskTitle)
     }
     return (
         <div>
