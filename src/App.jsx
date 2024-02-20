@@ -3,6 +3,9 @@ import TasksCreator from "./components/TasksCreator";
 import TaskTable from "./components/TaskTable";
 import { ShowTaskControl } from "./components/ShowTaskControl";
 
+import "./styles/background-svg.css"
+import "./App.css"
+
 
 function App() {
 
@@ -39,16 +42,17 @@ function App() {
 
 
   return <>
-    <div>
-      <div className="d-flex-center">
+    <div className="app background-svg">
+      <div className="d-flex-center width-70">
 
         <TasksCreator createNewTask={createNewTask} />
       </div>
-      <div className="d-flex-center">
+      <div className="d-flex-center width-70">
         <TaskTable tasksItems={tasksItems} toggleTaskDone={toggleTaskDone} />
 
       </div>
-      <div className="d-flex-center">
+      <h2>Tasks completed</h2>
+      <div className="d-flex-center width-70">
         <ShowTaskControl
           isChecked={showCompleted}
           setShowCompleted={(checked) => setShowCompleted(checked)}
@@ -56,10 +60,9 @@ function App() {
         />
       </div>
 
-
-      <div className="d-flex-center">
+      <div className="d-flex-center width-70">
         {showCompleted && (
-          <TaskTable tasksItems={tasksItems} toggleTaskDone={toggleTaskDone} showCompleted={showCompleted} />
+          <TaskTable tasksItems={tasksItems} toggleTaskDone={toggleTaskDone} showCompleted={showCompleted}/>
         )
         }
       </div>

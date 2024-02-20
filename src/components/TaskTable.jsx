@@ -8,7 +8,7 @@ const TaskTable = ({ tasksItems, toggleTaskDone, showCompleted = false}) => {
             .filter(task => task.done === doneValue)
             .map((task) => {
                     return (
-                        <TaskRow task={task} key={task.name} toggleTaskDone={toggleTaskDone} />
+                        <TaskRow task={task} key={task.name} toggleTaskDone={toggleTaskDone}/>
                     )
                 })
 

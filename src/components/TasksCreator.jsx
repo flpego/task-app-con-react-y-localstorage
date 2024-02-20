@@ -13,11 +13,14 @@ function TasksCreator({createNewTask}) {
   
     const handleSubmit = (e) => {
       e.preventDefault();
+      if (newTaskTitle === "") {
+        alert("por favor, llene el formulario con datos validos")
+      }
       createNewTask(newTaskTitle)
       setNewTaskTitle("");
     }
     return (
-        <div>
+        <div className="task-creator">
             <form onSubmit={handleSubmit}>
                 <input type="text" placeholder="Enter a new Task" onChange={handleChange} autoComplete="off" value={newTaskTitle} />
                 <button>Add</button>
