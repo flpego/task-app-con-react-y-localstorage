@@ -1,7 +1,6 @@
 {
   "name": "task-app-con-react-y-localstorage",
   "private": true,
-  "homepage": "https://flpego.github.io/task-app-con-react-y-localstorage",
   "version": "0.1",
   "type": "module",
   "scripts": {
