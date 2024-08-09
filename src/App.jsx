@@ -4,7 +4,6 @@ import TaskTable from "./components/TaskTable";
 import { ShowTaskControl } from "./components/ShowTaskControl";
 
 import "primereact/resources/themes/mdc-light-deeppurple/theme.css";
-
 import 'primereact/resources/primereact.min.css';
 import "./styles/background-svg.css"
 import "./App.css"

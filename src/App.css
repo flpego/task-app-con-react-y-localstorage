@@ -109,5 +109,20 @@ tbody tr {
   width: 70%;
 }
 
+.p-dialog {
+  min-height: 8rem;
+}
+ 
+
+
+.p-confirm-dialog-message, .p-dialog-title {
+  padding: .5rem;
+}
+
+.p-dialog-footer {
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+}
 
 
