@@ -48,27 +48,7 @@ Añadir una nueva tarea usando el campo de entrada y el botón "Añadir".
 Alternar el estado de completado de una tarea marcando o desmarcando la casilla.
 Ver las tareas completadas activando/desactivando el interruptor de "Ocultar/Mostrar tareas completadas".
 Limpiar todas las tareas completadas haciendo clic en el botón "Limpiar todas las tareas".
-Estructura de Carpetas
-css
-Copiar código
-src/
-│
-├── components/
-│   ├── ShowTaskControl.js
-│   ├── TaskRow.js
-│   ├── TasksCreator.js
-│   └── TaskTable.js
-│
-├── styles/
-│   ├── background-svg.css
-│   └── App.css
-│
-├── App.js
-└── index.js
-components/: Contiene todos los componentes reutilizables de React.
-styles/: Contiene los archivos CSS para la estilización.
-App.js: El componente principal que une todo.
-index.js: El punto de entrada para la aplicación React.
+
 Contribuir
 Si deseas contribuir a este proyecto, por favor haz un fork del repositorio y crea un pull request. ¡Las contribuciones son siempre bienvenidas!
 
@@ -80,10 +60,5 @@ No olvides personalizar este archivo README para que se ajuste mejor a los detal
 Autor
 Flavio P - flpego
 markdown
-Copiar código
 
-### Pasos adicionales
-
-1. **Actualiza los enlaces**: Asegúrate de reemplazar `tuusuario` y `tu-repositorio` con tu nombre de usuario y el nombre del repositorio en GitHub.
-2. **Autor**: Personaliza la sección de autor con tu nombre y enlace a tu perfil de GitHub.
 
