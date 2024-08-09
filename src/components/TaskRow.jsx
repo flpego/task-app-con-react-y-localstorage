@@ -1,12 +1,13 @@
-import React from 'react'
+import { Checkbox } from 'primereact/checkbox';
 
-export const TaskRow = ({task, toggleTaskDone}) => {
-    return (
-        <tr >
-            <td>{task.name}</td>
-            <td>
-                <input type="checkbox" value={task.done} onChange={() => toggleTaskDone(task)} className='chekbox'/>
-            </td>
-        </tr>
-    )
+
+export const TaskRow = ({ task, toggleTaskDone }) => {
+  return (
+    <tr>
+      <td>{task.name}</td>
+      <td>
+        <Checkbox checked={task.done} onChange={() => toggleTaskDone(task)} />
+      </td>
+    </tr>
+  )
 }

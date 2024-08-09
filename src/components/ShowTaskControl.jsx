@@ -1,5 +1,7 @@
+import { Button } from 'primereact/button';
+import { InputSwitch } from 'primereact/inputswitch';
 
-export const ShowTaskControl = ({ isChecked,setShowCompleted, deleteAllTasksDone }) => {
+export const ShowTaskControl = ({ isChecked, setShowCompleted, deleteAllTasksDone }) => {
 
   const handleDelete = () => {
     if (window.confirm("Are you sure?")) {
@@ -7,13 +9,14 @@ export const ShowTaskControl = ({ isChecked,setShowCompleted, deleteAllTasksDone
     }
   }
 
-
   return (
     <div className="d-flex-center show-task">
-    <label>Hidden/Show tasks completed</label>
+      <label>Hidden/Show tasks completed</label>
+      <InputSwitch checked={isChecked} onChange={(e) => setShowCompleted(e.value)} />
+      <div>
 
-      <button onClick={handleDelete}>Clear all tasks</button>
-      <input type="checkbox" checked={isChecked} onChange={(e) => setShowCompleted(e.target.checked)} className='checkBox-showList' /> 
+        <Button label="Clear all tasks" icon="pi pi-times" onClick={handleDelete} className="p-button-danger" />
+      </div>
     </div>
   )
 }
